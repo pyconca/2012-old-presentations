@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title>hello world</title>
+        <meta name="description" content="hello world" />
+        <meta name="author" content="Taavi Burns" />
+        <style>
+        /* RESET */
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed,
+        figure, figcaption, footer, header, hgroup,
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        /* FUN STUFF */
+
+        body {
+            font-family: "Tenderness", sans-serif;
+            font-size: 400%;
+            background: #B52A2A;
+            background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(#B52A2A));
+            background: -webkit-radial-gradient(rgb(240, 240, 240), #B52A2A);
+            background:    -moz-radial-gradient(rgb(240, 240, 240), #B52A2A);
+            background:     -ms-radial-gradient(rgb(240, 240, 240), #B52A2A);
+            background:      -o-radial-gradient(rgb(240, 240, 240), #B52A2A);
+            background:         radial-gradient(rgb(240, 240, 240), #B52A2A);
+        }
+        h1 {
+            margin-top: 0em;
+            font-size: 165%;
+            font-weight: normal;
+        }
+        .slide {
+            width: 800px;
+            height: 600px;
+            border: 1px solid #ccc;
+            background: rgba(255,255,255,0.85);
+            padding: 1em;
+            border-radius: 15px;
+        }
+        li {
+            margin-top: 0.5em;
+            padding-left: 0.3em;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="impress">
+            <div class="step slide" data-x="0" data-y="0" data-z="0">
+                <img src="pyconlogo.png" style="float:right" width="200" height="200">
+                <h1>Pycon.ca &ldquo;Precog&rdquo; presentations</h1>
+                <p style="text-align:right"><br />
+                    What you need to know.<br />
+                    <a href="https://twitter.com/jaaaarel">@jaaaarel</a> &amp; <a href="https://twitter.com/wolever">@wolever</a></p>
+            </div>
+            <div class="step slide" data-x="0" data-y="1200">
+                <h1>Weeks before</h1>
+                <ul>
+                    <li>Give your presentation as a screencast ahead of time</li>
+                    <li>Include back-channel locations</li>
+                    <li>Let people watch it and comment on it and ask questions about it</li>
+                </ul>
+            </div>
+            <div class="step slide" data-x="1200" data-y="1200" data-rotate="0">
+                <h1>Days before</h1>
+                <ul>
+                    <li>Read what people have been saying</li>
+                    <li>Prepare to answer them!</li>
+                </ul>
+            </div>
+            <div class="step slide" data-x="1200" data-y="0" data-rotate="0">
+                <h1>On the day</h1>
+                <ul>
+                    <li>Be prepared to give a 2-minute overview to refresh everyone's memory</li>
+                    <li>. . .</li>
+                    <li>Profit!</li>
+                </ul>
+            </div>
+        </div>
+        <script src="js/impress.js"></script>
+        <script>impress().init();</script>
+    </body>
+</html>

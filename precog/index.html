@@ -11,14 +11,14 @@
     </head>
     <body>
         <div id="impress">
-            <div class="step slide" data-x="0" data-y="0" data-z="0">
+            <div class="step slide">
                 <img src="pyconlogo.png" style="float:right" width="200" height="200">
                 <h1>Pycon.ca &ldquo;Precog&rdquo; presentations</h1>
                 <p style="text-align:right"><br />
                     What you need to know.<br />
                     <a href="https://twitter.com/jaaaarel">@jaaaarel</a> &amp; <a href="https://twitter.com/wolever">@wolever</a></p>
             </div>
-            <div class="step slide" data-x="0" data-y="1200">
+            <div class="step slide">
                 <h1>Weeks before</h1>
                 <ul>
                     <li>Give your presentation as a screencast ahead of time</li>
@@ -26,14 +26,14 @@
                     <li>Let people watch it and comment on it and ask questions about it</li>
                 </ul>
             </div>
-            <div class="step slide" data-x="1200" data-y="1200" data-rotate="0">
+            <div class="step slide">
                 <h1>Days before</h1>
                 <ul>
                     <li>Read what people have been saying</li>
                     <li>Prepare to answer them!</li>
                 </ul>
             </div>
-            <div class="step slide" data-x="1200" data-y="0" data-rotate="0">
+            <div class="step slide">
                 <h1>On the day</h1>
                 <ul>
                     <li>Be prepared to give a 2-minute overview to refresh everyone's memory</li>
@@ -42,6 +42,16 @@
                 </ul>
             </div>
         </div>
+        <script src="js/autolayout.js"></script>
+        <script>autolayout(function (step, steps) {
+            var once = Math.PI*2;
+            var offset = -once/4
+            return {
+                x: Math.cos(step*once/steps + offset) * 1200,
+                y: Math.sin(step*once/steps + offset) * 1200,
+                z: step * 500
+            };
+        });</script>
         <script src="js/impress.js"></script>
         <script>impress().init();</script>
     </body>

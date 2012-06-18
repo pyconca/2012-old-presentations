@@ -1,5 +1,5 @@
 function autolayout(step_function) {
-    step_function = step_function || function (step, steps) { return [step * 1200, 0]; };
+    step_function = step_function || function (step, steps) { return {x: step * 1200}; };
     var elements = document.getElementsByClassName('slide');
     var eps = 1e-5;
     var step;
